@@ -2,7 +2,7 @@
 import { useNavigate } from 'react-router-dom';
 import {
   LayoutDashboard, Package, BookOpen, LogOut,
-  Gift as GiftIcon, Check, Infinity as InfinityIcon, ShoppingBag
+  Gift as GiftIcon, Check, Infinity as InfinityIcon, ShoppingBag, Globe
 } from 'lucide-react';
 import { useAuth } from '../hooks/useAuth';
 import { fetchAdminGifts } from '../services/gifts';
@@ -106,6 +106,15 @@ export function AdminDashboard() {
           <div style={{ fontSize: '0.75rem', color: 'rgba(232,221,205,0.5)', marginBottom: '0.75rem' }}>
             {user?.email}
           </div>
+          <a
+            href="https://nickolliye.github.io/nicolemateus/"
+            className="admin-nav__item"
+            style={{ textDecoration: 'none', marginBottom: '0.5rem' }}
+            title="Voltar ao site público"
+          >
+            <Globe size={16} strokeWidth={1.5} />
+            Voltar ao site
+          </a>
           <button
             className="admin-nav__item"
             onClick={handleSignOut}

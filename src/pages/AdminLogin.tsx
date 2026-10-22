@@ -219,7 +219,7 @@ export function AdminLogin() {
 
         <p style={{ textAlign: 'center', marginTop: 'var(--spacing-lg)', fontSize: '0.75rem', color: 'var(--color-gray-text)' }}>
           Acesso restrito aos noivos.{' '}
-          <a href="/" style={{ color: 'var(--color-marsala)' }}>Voltar ao site</a>
+          <a href="https://nickolliye.github.io/nicolemateus/" style={{ color: 'var(--color-marsala)', textDecoration: 'underline' }}>Voltar ao site</a>
         </p>
       </div>
       <style>{`@keyframes spin { to { transform: rotate(360deg); }}`}</style>
